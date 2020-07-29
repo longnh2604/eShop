@@ -27,7 +27,7 @@
         <!--Category-->
         <scene sceneID="9VZ-rR-Jag">
             <objects>
-                <collectionViewController id="v0Q-cJ-JY5" sceneMemberID="viewController">
+                <collectionViewController id="v0Q-cJ-JY5" customClass="CategoryCollectionViewController" customModule="eShop" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="thJ-lf-BNd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,13 +39,39 @@
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iWC-Hp-1qj">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="iWC-Hp-1qj" customClass="CategoryCollectionViewCell" customModule="eShop" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NqJ-J0-OnX">
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JSt-M6-Fgp">
+                                            <rect key="frame" x="22.5" y="0.0" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="165-kv-PKZ"/>
+                                                <constraint firstAttribute="height" constant="75" id="uAj-tc-n8H"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeC-tE-WIu">
+                                            <rect key="frame" x="0.0" y="78" width="120" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="Ok0-RA-FUa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="YeC-tE-WIu" secondAttribute="trailing" id="8pb-4n-dA9"/>
+                                        <constraint firstItem="JSt-M6-Fgp" firstAttribute="centerX" secondItem="NqJ-J0-OnX" secondAttribute="centerX" id="Kxq-AT-AeQ"/>
+                                        <constraint firstItem="YeC-tE-WIu" firstAttribute="leading" secondItem="NqJ-J0-OnX" secondAttribute="leading" id="O7j-YA-ddL"/>
+                                        <constraint firstAttribute="bottom" secondItem="YeC-tE-WIu" secondAttribute="bottom" id="XFj-Za-c0J"/>
+                                        <constraint firstItem="JSt-M6-Fgp" firstAttribute="top" secondItem="NqJ-J0-OnX" secondAttribute="top" id="ukw-uq-pwl"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="120" height="120"/>
                             </collectionViewCell>
                         </cells>
                         <connections>

@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D8A9A60E92CB191E8A88F4BB /* Pods_eShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A7AD85FC49855E97511D5A /* Pods_eShop.framework */; };
 		F47230EF24B83EAF00922E24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47230EE24B83EAF00922E24 /* AppDelegate.swift */; };
 		F47230F124B83EAF00922E24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47230F024B83EAF00922E24 /* SceneDelegate.swift */; };
-		F47230F324B83EAF00922E24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47230F224B83EAF00922E24 /* ViewController.swift */; };
 		F47230F624B83EAF00922E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47230F424B83EAF00922E24 /* Main.storyboard */; };
 		F47230F824B83EB000922E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47230F724B83EB000922E24 /* Assets.xcassets */; };
 		F47230FB24B83EB000922E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47230F924B83EB000922E24 /* LaunchScreen.storyboard */; };
+		F490BD0C24D10D1300C26C9E /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD0B24D10D1300C26C9E /* CategoryCollectionViewController.swift */; };
+		F490BD0E24D10F3300C26C9E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD0D24D10F3300C26C9E /* CategoryCollectionViewCell.swift */; };
+		F490BD1024D1109C00C26C9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F490BD0F24D1109C00C26C9E /* GoogleService-Info.plist */; };
+		F490BD1224D114CF00C26C9E /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD1124D114CF00C26C9E /* FirebaseCollectionReference.swift */; };
+		F490BD1824D1176800C26C9E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD1724D1176800C26C9E /* Category.swift */; };
+		F490BD1A24D1193300C26C9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD1924D1193300C26C9E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +28,16 @@
 		F47230EB24B83EAF00922E24 /* eShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47230EE24B83EAF00922E24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47230F024B83EAF00922E24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F47230F224B83EAF00922E24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F47230F524B83EAF00922E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47230F724B83EB000922E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47230FA24B83EB000922E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47230FC24B83EB000922E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F490BD0B24D10D1300C26C9E /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		F490BD0D24D10F3300C26C9E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F490BD0F24D1109C00C26C9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F490BD1124D114CF00C26C9E /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		F490BD1724D1176800C26C9E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F490BD1924D1193300C26C9E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +58,6 @@
 				36CD50F5C39582EF68601AB6 /* Pods-eShop.debug.xcconfig */,
 				888B62E0CF29874E25586319 /* Pods-eShop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,13 +92,50 @@
 			children = (
 				F47230EE24B83EAF00922E24 /* AppDelegate.swift */,
 				F47230F024B83EAF00922E24 /* SceneDelegate.swift */,
-				F47230F224B83EAF00922E24 /* ViewController.swift */,
+				F490BD1624D1174B00C26C9E /* Models */,
+				F490BD1524D116EC00C26C9E /* Helpers */,
+				F490BD1424D116E100C26C9E /* CustomCells */,
+				F490BD1324D116DA00C26C9E /* MainViews */,
 				F47230F424B83EAF00922E24 /* Main.storyboard */,
 				F47230F724B83EB000922E24 /* Assets.xcassets */,
 				F47230F924B83EB000922E24 /* LaunchScreen.storyboard */,
 				F47230FC24B83EB000922E24 /* Info.plist */,
+				F490BD0F24D1109C00C26C9E /* GoogleService-Info.plist */,
 			);
 			path = eShop;
+			sourceTree = "<group>";
+		};
+		F490BD1324D116DA00C26C9E /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				F490BD0B24D10D1300C26C9E /* CategoryCollectionViewController.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		F490BD1424D116E100C26C9E /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				F490BD0D24D10F3300C26C9E /* CategoryCollectionViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		F490BD1524D116EC00C26C9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F490BD1124D114CF00C26C9E /* FirebaseCollectionReference.swift */,
+				F490BD1924D1193300C26C9E /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F490BD1624D1174B00C26C9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F490BD1724D1176800C26C9E /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47230FB24B83EB000922E24 /* LaunchScreen.storyboard in Resources */,
+				F490BD1024D1109C00C26C9E /* GoogleService-Info.plist in Resources */,
 				F47230F824B83EB000922E24 /* Assets.xcassets in Resources */,
 				F47230F624B83EAF00922E24 /* Main.storyboard in Resources */,
 			);
@@ -207,9 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47230F324B83EAF00922E24 /* ViewController.swift in Sources */,
+				F490BD1224D114CF00C26C9E /* FirebaseCollectionReference.swift in Sources */,
+				F490BD0E24D10F3300C26C9E /* CategoryCollectionViewCell.swift in Sources */,
 				F47230EF24B83EAF00922E24 /* AppDelegate.swift in Sources */,
+				F490BD0C24D10D1300C26C9E /* CategoryCollectionViewController.swift in Sources */,
+				F490BD1A24D1193300C26C9E /* Constants.swift in Sources */,
 				F47230F124B83EAF00922E24 /* SceneDelegate.swift in Sources */,
+				F490BD1824D1176800C26C9E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +412,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.jp.Oluxe.eShop;
+				PRODUCT_BUNDLE_IDENTIFIER = co.jp.eShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.jp.Oluxe.eShop;
+				PRODUCT_BUNDLE_IDENTIFIER = co.jp.eShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
