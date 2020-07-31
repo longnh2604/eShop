@@ -14,6 +14,7 @@
 		F47230F824B83EB000922E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47230F724B83EB000922E24 /* Assets.xcassets */; };
 		F47230FB24B83EB000922E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47230F924B83EB000922E24 /* LaunchScreen.storyboard */; };
 		F47B16C324D3E86800A48414 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B16C224D3E86800A48414 /* ItemsTableViewController.swift */; };
+		F47B16C724D4155400A48414 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B16C624D4155400A48414 /* Item.swift */; };
 		F490BD0C24D10D1300C26C9E /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD0B24D10D1300C26C9E /* CategoryCollectionViewController.swift */; };
 		F490BD0E24D10F3300C26C9E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490BD0D24D10F3300C26C9E /* CategoryCollectionViewCell.swift */; };
 		F490BD1024D1109C00C26C9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F490BD0F24D1109C00C26C9E /* GoogleService-Info.plist */; };
@@ -34,6 +35,7 @@
 		F47230FA24B83EB000922E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47230FC24B83EB000922E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47B16C224D3E86800A48414 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		F47B16C624D4155400A48414 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F490BD0B24D10D1300C26C9E /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		F490BD0D24D10F3300C26C9E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F490BD0F24D1109C00C26C9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F490BD1724D1176800C26C9E /* Category.swift */,
+				F47B16C624D4155400A48414 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F490BD1224D114CF00C26C9E /* FirebaseCollectionReference.swift in Sources */,
+				F47B16C724D4155400A48414 /* Item.swift in Sources */,
 				F490BD0E24D10F3300C26C9E /* CategoryCollectionViewCell.swift in Sources */,
 				F47B16C324D3E86800A48414 /* ItemsTableViewController.swift in Sources */,
 				F47230EF24B83EAF00922E24 /* AppDelegate.swift in Sources */,

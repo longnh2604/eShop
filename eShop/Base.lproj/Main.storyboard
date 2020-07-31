@@ -153,7 +153,9 @@
                             <outlet property="delegate" destination="6Oj-ct-tjQ" id="Wsd-0A-2SK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1jx-ft-CgY"/>
+                    <navigationItem key="navigationItem" id="1jx-ft-CgY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ihr-WC-8QD"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzh-GQ-eqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
