@@ -25,6 +25,17 @@ class CategoryCollectionViewController: UICollectionViewController {
         loadCategories()
     }
 
+    // MARK: Download category
+    
+    private func loadCategories() {
+        
+        downloadCategoriesFromFirebase { (allCategories) in
+            
+            self.categoryArray = allCategories
+            self.collectionView.reloadData()
+        }
+    }
+    
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,14 +49,23 @@ class CategoryCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    private func loadCategories() {
+    // MARK: UICollectionViewDelegate
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "categoryToItemsSeg", sender: categoryArray[indexPath.row])
+    }
+    
+    // MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        downloadCategoriesFromFirebase { (allCategories) in
+        if segue.identifier == "categoryToItemsSeg" {
             
-            self.categoryArray = allCategories
-            self.collectionView.reloadData()
+            let vc = segue.destination as! ItemsTableViewController
+            vc.category = sender as! Category
         }
     }
+    
 }
 
 // MARK: UICollectionViewDelegate FlowLayout
